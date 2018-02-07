@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Set the right picture whenever it's a match!
+/// This class is responsible for setting the right picture whenever there is a match!
 /// </summary>
 
 public class PictureController : MonoBehaviour {
@@ -21,6 +21,10 @@ public class PictureController : MonoBehaviour {
 		int current_character = cardController.ReturnCurrentPosisitionAndCharacter ();
 		miniphotos [current_character].SetActive (true);
 	}
+
+	/// <summary>
+	/// This method will hide the pictures in case of keep scrolling or send message button pressing.
+	/// </summary>
 
 	public void HideMiniPhotos (){
 		for (int i = 0; i < miniphotos.Length; i++){

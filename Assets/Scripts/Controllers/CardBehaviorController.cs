@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Wait and set swipe active.
+/// This class is responsible for handleing the Behavior of a card.
 /// </summary>
 
 public class CardBehaviorController : MonoBehaviour {
 
 	/// <summary>
-	/// Find the swipe controller script.
+	/// The swipeController variable will be needed to call a method from the SwipeController script.
 	/// </summary>
 
 	private SwipeController swipeController;
 
 	/// <summary>
-	/// Constructor method will find the script and assign it to swipeController variable of SwipeController find. 
-	/// It will also wait half a second before activating the swipe.
+	/// Constructor method is responsible for getting the script SwipeController and assign it to swipeController variable. 
+	/// It will also Invoke the method "ActivateSwipe ()" after half a second.
 	/// </summary>
 
 	void Start () {
@@ -25,7 +25,8 @@ public class CardBehaviorController : MonoBehaviour {
 	}
 
 	/// <summary>
-	/// If the script was succesfully found, enable it.
+	/// If swipeControll is different then null it means that the script was found during the Constructor assignment.
+	/// If that is the case, enable the swipeController script on the gameObject. Due to Invoke, this will happen 0.5 seconds after the game start.
 	/// </summary>
 
 	void ActivateSwipe (){

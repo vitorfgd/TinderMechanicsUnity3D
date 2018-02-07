@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Destroy card after swipe, doesn't matter to which direction..
+/// This class destroys cards after swipe on both directions. There are no constructions.
+/// This script is attached to the card.
 /// </summary>
 
 public class CardDestroyerBehavior : MonoBehaviour {
 
 	/// <summary>
-	/// If card position in x axis is greater than 48 or less than -48, destroy card.
+	/// Check every frame end if a card position in the x axis is greater than 48 or less than -48, if it is, destroy the card.
 	/// </summary>
 
 	void Update () {

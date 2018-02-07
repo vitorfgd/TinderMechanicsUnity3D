@@ -2,16 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This class handle the "It's a Match" message animation.
+/// </summary>
+
 public class MatchAnimation : MonoBehaviour {
 
 	/// <summary>
-	/// Activate and animate every element in the "It's a match" message.
+	/// GameObjects requires to ba activated and animated during the "It's a match" message.
 	/// </summary>
 
 	public GameObject background, text01, text02, picture, button01, button02;
 
 	/// <summary>
-	/// Constructor: Start "It's a match" animation.
+	/// Constructor: Start "It's a Match" animation calling the Coroutine "StartAnimation ()".
 	/// </summary>
 
 	void OnEnable () {
@@ -19,9 +23,8 @@ public class MatchAnimation : MonoBehaviour {
 	}
 
 	/// <summary>
-	/// It's a match animation done with LeanTween.
+	/// Execute the animation using LeanTween to perform the animations.
 	/// </summary>
-	/// <returns></returns>
 
 	private IEnumerator StartAnimation (){
 		LeanTween.alpha (background, 0.92f, 0.3f);

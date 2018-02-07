@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// CardController will be responsible for creating and managing the deck as the user is playing.
+/// This class is responsible for creating and managing the deck of cards as the user is swiping.
 /// </summary>
 
 public class CardController : MonoBehaviour {
@@ -66,7 +66,7 @@ public class CardController : MonoBehaviour {
 	private float depth;
 
 	/// <summary>
-	/// Constructor: will find game areas (main and messages), enable the correct area, assign key variables and initiate card instantiation.
+	/// Constructor method is responsible for finding game areas (main and messages), enable the correct area, assign key variables and initiate card instantiation.
 	/// </summary>
 
 	void Start () {

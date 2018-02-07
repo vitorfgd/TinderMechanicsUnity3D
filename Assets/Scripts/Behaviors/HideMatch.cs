@@ -3,25 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// In case of keep scrolling, hide the "It's a match" message;
+/// This class handles a click on the "Keep Scrolling" button in the "It's a Match" message.
 /// </summary>
 
 public class HideMatch : MonoBehaviour {
 
 	/// <summary>
-	/// Match content
+	/// Match content, there is no need to disable each component inside of "match" so it's easier to just disable the parent.
 	/// </summary>
 
 	public GameObject match;
 
 	/// <summary>
-	/// Find the script pictureController to hide the picture.
+	/// The pictureController variable will be needed to call a method from PictureController script.
 	/// </summary>
 
 	private PictureController pictureController;
 
 	/// <summary>
-	/// When click on keep scrolling this script will find PictureController, disable the picture and set the match to false.
+	/// OuMouseDown handles the click on "Keep Scrolling" during the "It's a Match!" message.
+	/// This script will find PictureController, assign it to pictureController, disable the picture using a reference to the script assigned previously 
+	/// and set the match (parent of each component in the "It's a Match!" message) to false.
 	/// </summary>
 
 	void OnMouseDown (){
