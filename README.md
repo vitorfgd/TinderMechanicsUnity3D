@@ -13,7 +13,7 @@ Creating your own cards and game is really simple, create the cards (in the futu
 ![gif](https://thumbs.gfycat.com/UnkemptOddballFeline-size_restricted.gif)
 
 
-##Contributing
+## Contributing
 
 1. Fork the repository on Github;
 2. Clone the project into your machine;
