@@ -8,6 +8,11 @@ A simple Unity application. I'm trying to recreate the basic tinder mechanics. *
 Creating your own cards and game is really simple, create the cards (in the future this will be automatic), create a prefab with that card. Add it to the array under `_CardController` GameObject on the hierarchy root and set how many cards would you like to be instantiated on game start.
 
 
+## Gameplay
+
+![gif](https://thumbs.gfycat.com/UnkemptOddballFeline-size_restricted.gif)
+
+
 ##Contributing
 
 1. Fork the repository on Github;
