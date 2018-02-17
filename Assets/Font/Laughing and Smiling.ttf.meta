@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 5de75783f8d7243a2a04a70c2631f1e9
+timeCreated: 1518039303
+licenseType: Pro
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Laughing and Smiling
+  fontNames:
+  - Laughing and Smiling
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
